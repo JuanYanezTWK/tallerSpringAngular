@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <label> 
+    <input [(ngModel)]="id_select" placeholder="Ingrese ID Producto"><button (click)="uno()">Buscar</button>
+    <h1>ID: {{id2}}</h1> 
+    <h1>Precio: {{price2}}</h1> 
+    <h1>Descripción: {{description2}}</h1> 
+  </label>
+  <br>
+  <br>
+  <br>
+  
+  <button (click)="todo()">Consultar Todo</button>
+  <table style="width:60%">
+    <tr>
+      <td style="border: 1px solid rgb(12, 15, 172);">ID</td>
+      <td style="border: 1px solid rgb(12, 15, 172);;">Precio</td>
+      <td style="border: 1px solid rgb(12, 15, 172);;">Producto</td>
+    </tr>
+    <tr>
+      <td>{{id}}</td>
+      <td>{{price}}</td>
+      <td>{{description}}</td>
+    </tr>
+  </table>
+      
+</div>
