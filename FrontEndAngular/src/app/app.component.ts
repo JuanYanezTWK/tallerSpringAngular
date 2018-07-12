@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Http, Response} from '@angular/http';
+import { Component} from '@angular/core';
 import { LlamadoService } from './llamado.service';
-
 
 @Component({
   selector: 'app-root',
@@ -21,13 +19,13 @@ export class AppComponent {
     
   }
   
-  uno() {
+  buscarUno() {
     this.id = this.llamadoService.id;
     this.price = this.llamadoService.price;
     this.description = this.llamadoService.description;
     this.llamadoService.llamarUno();  
   }
-  todo() {
+  buscarTodo() {
     this.llamadoService.id_select = this.id_select;
     this.id2 = this.llamadoService.id2;
     this.price2 = this.llamadoService.price2;
